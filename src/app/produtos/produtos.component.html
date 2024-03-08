@@ -1,0 +1,37 @@
+<app-menu-lateral class="fixed-top my-5"></app-menu-lateral>
+<div class="d-flex my-5">
+  <div class="col-3"></div>
+  <div id="produtos" class="container my-5 col-9">
+    <div class="row my-3">
+      <div class="col text-center">
+        <h2>Produtos</h2>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-4 my-3" *ngFor="let produto of produtos">
+        <div class="card bg-light text-dark text-center">
+          <div class="card-header">
+            <img src="http://localhost:8000/{{ produto.img }}" class="img-fluid">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">
+            {{ produto.nome }}
+          </h5>
+          <p> {{ produto.desc_produto }}</p>
+          <p class="card-text">
+            R$ <span class="text-dark fs-2 fw-bold"> {{ produto.valor }}</span>
+          </p>
+          </div>
+          <div class="card-footer p-0">
+            <div class="d-grid">
+            <button class="btn btn-dark"> Adicionar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

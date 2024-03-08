@@ -1,0 +1,205 @@
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <h2>Finalizar Compra <i class="bi bi-bag-check"></i></h2>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-dark">Seu carrinho</span>
+          <span class="badge bg-dark rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Nome do Produto</h6>
+              <small class="text-body-secondary">Descrição breve</small>
+            </div>
+            <span class="text-body-secondary">R$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Segundo produto</h6>
+              <small class="text-body-secondary">Descrição breve</small>
+            </div>
+            <span class="text-body-secondary">R$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Terceiro item</h6>
+              <small class="text-body-secondary">Descrição breve</small>
+            </div>
+            <span class="text-body-secondary">R$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+            <div class="text-success">
+              <h6 class="my-0">Código promocional</h6>
+              <small>EXAMPLECODE</small>
+            </div>
+            <span class="text-success">−R$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (BRL)</span>
+            <strong>R$20</strong>
+          </li>
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Código promocional">
+            <button type="submit" class="btn btn-secondary">Resgatar</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Endereço de Cobrança</h4>
+        <form class="needs-validation" novalidate="">
+          <div class="row g-3">
+            <div class="col-10">
+              <label for="address" class="form-label">
+                Endereço</label>
+              <input type="text" class="form-control" id="address" placeholder="Rua Principal 1234" required="">
+              <div class="invalid-feedback">
+                Favor inserir seu endereço de entrega.
+              </div>
+
+            </div>
+            <div class="col-2">
+              <label for="address" class="form-label">
+                Numero</label>
+              <input type="text" class="form-control" id="address" placeholder="00" required="">
+              <div class="invalid-feedback">
+                Favor inserir seu endereço de entrega.
+              </div>
+
+            </div>
+            <div class="col-md-5">
+              <label for="country" class="form-label">Estado</label>
+              <select class="form-select" id="country" required="">
+                <option value="">Escolher...</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+              <div class="invalid-feedback">
+                Forneça um estado válido.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">Cidade</label>
+              <select class="form-select" id="state" required="">
+                <option value="">Escolher...</option>
+                <option value="saopaulo">São Paulo</option>
+                <option value="campinas">Campinas</option>
+                <option value="ribeiraopreto">Ribeirão Preto</option>
+                <option value="guarulhos">Guarulhos</option>
+                <option value="santoandre">Santo André</option>
+              </select>
+              <div class="invalid-feedback">
+                Selecione uma cidade válido.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">CEP</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required="">
+              <div class="invalid-feedback">
+                Código postal obrigatório.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-check my-4">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Salve essas informações para a próxima vez</label>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Pagamento</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+              <label class="form-check-label" for="credit">Cartão de crédito</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+              <label class="form-check-label" for="debit">Cartão de débito</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Nome no cartão</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+              <small class="text-body-secondary">Nome completo conforme exibido no cartão</small>
+              <div class="invalid-feedback">
+                O nome no cartão é obrigatório
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Número do cartão de crédito</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+              <div class="invalid-feedback">
+                O número do cartão de crédito é obrigatório
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Expiração</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+              <div class="invalid-feedback">
+                Data de validade necessária
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+              <div class="invalid-feedback">
+                Código de segurança necessário
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-dark btn-lg" type="submit">Finalizar Compra</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="my-5"></footer>
+  </div>
+  <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="checkout.js"></script>
+

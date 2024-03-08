@@ -1,0 +1,38 @@
+<header class="p-3 mb-3 border-bottom bg-dark fixed-top">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+        <img src="/assets/imagens/logo2.gif" class="img-fluid" width="60" class="logo">
+      </a>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 text-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Home</font></font></a></li>
+        <li><a href="/produtos/Feminino" class="nav-link px-2 text-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Feminino</font></font></a></li>
+        <li><a href="/produtos/Masculino" class="nav-link px-2 text-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Masculino</font></font></a></li>
+        <li><a href="/produtos/Unissex" class="nav-link px-2 text-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Unissex</font></font></a></li>
+        <li><a href="/produtos" class="nav-link px-2 text-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esportivo</font></font></a></li>
+        <li><a href="/produtos" class="nav-link px-2 text-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Marcas</font></font></a></li>
+
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input type="search" class="form-control" placeholder="Procurar..." aria-label="Procurar">
+      </form>
+
+      <div ngbDropdown class="d-inline-block">
+        <img *ngIf="isUser" class="user" src="https://cdn.icon-icons.com/icons2/1141/PNG/512/1486395884-account_80606.png" alt="" id="dropdownBasic1" ngbDropdownToggle>
+
+          <button class="btn btn-dark" *ngIf="!isUser" routerLink="/cadastre-se">Cadastrar-se</button>
+          <button class="btn btn-dark" *ngIf="!isUser" routerLink="/login">Login</button>
+
+        <div  *ngIf="isUser" ngbDropdownMenu aria-labelledby="dropdownBasic2">
+          <button ngbDropdownItem routerLink="/carrinho">Carrinho</button>
+          <button ngbDropdownItem routerLink="#">Meus Pedidos</button>
+          <button ngbDropdownItem routerLink="/login">Sair</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</header>
