@@ -18,6 +18,7 @@ import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { LoginComponent } from './login/login.component';
+import { BannerComponent } from './banner/banner.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { LoginComponent } from './login/login.component';
     MenuLateralComponent,
     ProdutosComponent,
     CarrinhoComponent,
-    LoginComponent
+    LoginComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

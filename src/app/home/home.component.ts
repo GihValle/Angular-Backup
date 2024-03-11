@@ -6,18 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  images=[
-    {
-      src:'/assets/imagens/banner-principal.gif',
-      titulo:''
-    },
-    {
-      src:'/assets/imagens/NOVIDADES-BANNER.gif',
-      titulo:''
-    },
-    {
-      src:'/assets/imagens/banner-coleção-oficial.gif',
-      titulo:''
-    }
-  ]
+  
 }

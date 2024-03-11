@@ -28,7 +28,7 @@
         <div  *ngIf="isUser" ngbDropdownMenu aria-labelledby="dropdownBasic2">
           <button ngbDropdownItem routerLink="/carrinho">Carrinho</button>
           <button ngbDropdownItem routerLink="#">Meus Pedidos</button>
-          <button ngbDropdownItem routerLink="/login">Sair</button>
+          <button ngbDropdownItem (click)="logout()">Sair</button>
         </div>
 
       </div>

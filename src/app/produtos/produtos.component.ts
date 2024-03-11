@@ -23,9 +23,10 @@ export class ProdutosComponent implements OnInit {
     this._activate.params.subscribe((filtro:any) => {
       this._servicos.getProdutos(filtro["filtro"]).subscribe((data:any) => {
         if(data["status"] == 'success') {
-          data["produtos"].forEach((element:any) => {
-            this.produtos.push(element);
-          });
+            data["produtos"].forEach((element:any) => {
+              this.produtos.push(element);
+            });
+          
         }
       })
     })
