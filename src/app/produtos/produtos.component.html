@@ -1,48 +1,27 @@
-<div class="d-flex">
-  <app-menu-lateral></app-menu-lateral>
-  <div class="d-flex flex-column">
-    <div class="text-center">
-      <h2>Produtos</h2>
-    </div>
-    <div class="row align-items-center">
-      <div class="card-produto m-3" *ngFor="let produto of produtos">
-        <div class="card-img">
-          <img src="http://localhost:8000/{{ produto.img }}">
-        </div>
-        <div class="card-produto-body">
-          <div class="card-produto-info">
-            <div class="card-produto-name">{{ produto.nome }}</div>
-            <div class="card-produto-desc">{{ produto.desc_produto }}</div>
-            <div>R$ <span class="text-dark fs-2 fw-bold"> {{ produto.valor }}</span></div>
-          </div>
-          <div class="card-produto-bottom"><span><i class="bi bi-cart-plus"></i></span><span><i
-                class="bi bi-heart"></i></span></div>
-        </div>
+<div class="prod-aling">
+  <div class="d-flex">
+    <app-menu-lateral></app-menu-lateral>
+    <div class="d-flex flex-column prod">
+      <div class="text-center">
+        <h2>Produtos</h2>
       </div>
-
+      <div class="row align-items-center">
+        <div class="card-produto m-3" *ngFor="let produto of produtos">
+          <div class="card-img">
+            <img src="http://localhost:8000/{{ produto.img }}">
+          </div>
+          <div class="card-produto-body">
+            <div class="card-produto-info">
+              <div class="card-produto-name">{{ produto.nome }}</div>
+              <div class="card-produto-desc">{{ produto.desc_produto }}</div>
+              <div>R$ <span class="text-dark fs-2 fw-bold"> {{ produto.valor }}</span></div>
+            </div>
+            <div class="card-produto-bottom"><span><i class="bi bi-cart-plus"></i></span><span><i
+                  class="bi bi-heart"></i></span></div>
+          </div>
+        </div>
+  
+      </div>
     </div>
   </div>
 </div>
-
-
-<!-- <div class="col-3 my-3" *ngFor="let produto of produtos">
-  <div class="card bg-light text-dark text-center">
-    <div class="card-header">
-      <img src="http://localhost:8000/{{ produto.img }}" class="img-sh">
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">
-      {{ produto.nome }}
-    </h5>
-    <p> {{ produto.desc_produto }}</p>
-    <p class="card-text">
-      R$ <span class="text-dark fs-2 fw-bold"> {{ produto.valor }}</span>
-    </p>
-    </div>
-    <div class="card-footer p-0">
-      <div class="d-grid">
-      <button class="btn btn-dark"> Adicionar </button>
-      </div>
-    </div>
-  </div>
-</div> -->

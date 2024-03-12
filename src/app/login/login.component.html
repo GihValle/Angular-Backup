@@ -1,42 +1,44 @@
-<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-  <div class="container mt-5">
-      <div class="row mt-5 justify-content-center">
-          <div class="col-4">
-
-              <div class="row">
-                  <div class="col text-center">
-                      <h2>Tela de Login!</h2>
-                  </div>
-              </div>
-
-              <div class="row mb-3">
-                  <div class="col">
-                      <label>E-mail: </label>
-                      <div class="input-group">
-                          <input class="form-control" formControlName="email">
-                          <label class="input-group-text"><i class="bi bi-envelope"></i></label>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="row mb-3">
-                  <div class="col">
-                      <label>Senha: </label>
-                      <div class="input-group">
-                          <input type="password" formControlName="senha" class="form-control">
-                          <label class="input-group-text"><i class="bi bi-lock"></i></label>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="row mb-3">
-                  <div class="col">
-                      <button class="btn btn-outline-danger me-3" type="reset">Limpar</button>
-                      <button class="btn btn-primary" type="submit">Entrar</button>
-                  </div>
-              </div>
-
-          </div>
-      </div>
-  </div>
-</form>
+<div class="login">
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+        <div class="container mt-5">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-4">
+      
+                    <div class="row">
+                        <div class="col text-center">
+                            <h2>Tela de Login!</h2>
+                        </div>
+                    </div>
+      
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label>E-mail: </label>
+                            <div class="input-group">
+                                <input class="form-control" formControlName="email">
+                                <label class="input-group-text"><i class="bi bi-envelope"></i></label>
+                            </div>
+                        </div>
+                    </div>
+      
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label>Senha: </label>
+                            <div class="input-group">
+                                <input type="password" formControlName="senha" class="form-control">
+                                <label class="input-group-text"><i class="bi bi-lock"></i></label>
+                            </div>
+                        </div>
+                    </div>
+      
+                    <div class="row mb-3">
+                        <div class="col">
+                            <button class="btn btn-outline-danger me-3" type="reset">Limpar</button>
+                            <button class="btn btn-primary" type="submit">Entrar</button>
+                        </div>
+                    </div>
+      
+                </div>
+            </div>
+        </div>
+      </form>
+</div>

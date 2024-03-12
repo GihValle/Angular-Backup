@@ -1,3 +1,9 @@
+.prod-aling{
+    min-height: 80vh;
+}
+.prod{
+    width: 169vh;
+}
 .card-produto{
     margin: 20px;
     padding: 5px;
@@ -51,4 +57,11 @@
 }
 .card-produto-desc{
     color: rgb(95, 94, 94);
+}
+.text-center{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
